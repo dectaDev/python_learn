@@ -293,3 +293,46 @@
     # print(i)
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # print(*numbers) 
+
+# numbers = [1, 2, 3, 4, 5]
+# print(*numbers)
+
+# name = input('enter name : ')
+# print(*name)
+
+# valus = list(range(2, 89, 2))
+# print(*valus)
+
+# valus = [*range(50)]
+# print(valus)
+# first = [1, 2, 3, 4, 5, 6, 7]
+# secend = [8, 9, 10, 11, 12, 13, 14]
+
+# full = [*first, *secend]
+
+# print(full)
+
+# x = {"x": 12, "y": 25}
+
+# y = [i for i in x.items()]
+
+# print(y)
+
+# try :
+#     inp = int(input())
+#     print(inp)
+# except:
+#     print("enter a number.")else:
+#     print("enter another thing.")
+
+
+try:
+    age = int(input('how old are you : '))
+    sal = 10 // age
+except (ValueError, ZeroDivisionError): 
+    print("you didnt enter your age and may be enter your age 0.")
+else:
+    print("every thing is good.")
+
+
+ 
