@@ -348,8 +348,23 @@
 #     "amin"
 # )
 
-numbers = [x for x in range(90)]
-print(*numbers)
+# numbers = [x for x in range(90)]
+# print(*numbers)
 
-dicts = {1: 1, 2 : 2, 3: 3}
-print(*dicts)
+# dicts = {1: 1, 2 : 2, 3: 3}
+# print(*dicts)
+
+from timeit import timeit 
+
+code1 = """
+def age(age):
+    if age <= 0:
+        raise UnicodeError("age can not be 0 or less")
+    return 10 // age
+  
+print(age(-1))
+
+
+"""
+
+print("code1", timeit(code1, number=10000))
