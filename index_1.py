@@ -238,7 +238,58 @@
  
 # print(z)
 
-points = 1, 2, 4, 5
+# points = 1, 2, 4, 5
 
-print(points)
- 
+# print(points)
+
+# point = (1, 2, 3, 4, 5, 6)
+# print(type(point[0]))
+# x, y, z, *w = point
+
+# print(x, y, z, w, sep="\t")
+
+
+# x = 10
+# y = 20
+
+# x = x + y
+# y = x - y
+# x = x - y
+
+# print(x, y)
+
+# from array import array as ar
+
+# x = ar('l', [1, 2, 3, 4, 5, 6])
+# print(x[0])
+# numbers = [1, 2, 1, 2, 1, 2, 3, 6, 7]
+# uniq = set(numbers)
+
+# print(uniq)
+
+# first = {1, 2, 3, 4, 5, 5, 6, 5, 6, 5, 7}
+# second = {7, 8, 7, 8, 9, 0, 9, 7, 8, 9, 9}
+# al = (first | second)
+# print(al)
+
+# x = dict()
+# x["name"] = "ali"
+# x["age"] = 12
+# x["gender"] = "male" 
+# print(x)
+# print(x.get("23", "not exist"))
+
+# # del x["name"]
+# # print(x)
+
+# for i in x.items():
+#     print(i)
+
+u = (x ** 2 for x in range(20))
+# print(y)
+
+# u = [x ** 2 for x in range(200)]
+for i in u:
+    print(i)
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(*numbers) 
