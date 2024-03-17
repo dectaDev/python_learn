@@ -322,7 +322,7 @@
 #     inp = int(input())
 #     print(inp)
 # except:
-#     print("enter a number.")
+#     print("enter a number.")  
 # else:
 #     print("enter another thing.")
 
@@ -343,3 +343,13 @@
 # with open("amin.txt") as file:
 #     print("file opened")
 
+
+# print(
+#     "amin"
+# )
+
+numbers = [x for x in range(90)]
+print(*numbers)
+
+dicts = {1: 1, 2 : 2, 3: 3}
+print(*dicts)
