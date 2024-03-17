@@ -354,17 +354,22 @@
 # dicts = {1: 1, 2 : 2, 3: 3}
 # print(*dicts)
 
-from timeit import timeit 
+# from timeit import timeit 
+# code1 = '''
 
-code1 = """
-def age(age):
-    if age <= 0:
-        raise UnicodeError("age can not be 0 or less")
-    return 10 // age
+# def age(age):
+#     if age <= 0:
+#         raise UnicodeError("age can not be 0 or less")
+#     return 10 // age
   
-print(age(-1))
+# print(age(-1))
+
+# try :
+#     age(-1)
+# except BaseException as ex:
+#     pass
 
 
-"""
+# '''
+# print(timeit(code1, number=10000))
 
-print("code1", timeit(code1, number=10000))
