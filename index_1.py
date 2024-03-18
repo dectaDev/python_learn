@@ -373,3 +373,9 @@
 # '''
 # print(timeit(code1, number=10000))
 
+from data import *
+
+nima = amin(2, 3)
+
+print(nima.draw())
+

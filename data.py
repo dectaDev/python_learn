@@ -9,3 +9,14 @@ print(queue)
 
 queue.popleft()
 print(queue)
+
+class amin:
+    def __init__(self, x, y):
+        self.x = x; self.y = y
+
+    def __add__(self, another):
+        return amin(self.x+another.x, self.y+another.y)
+    
+    def draw(self):
+        return f'amin is {self.x}, {self.y}'
+    
