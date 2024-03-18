@@ -2,29 +2,29 @@
 
 
 
-class Point:
-    help = "this a pointer"
-    def __init__(self, x = 0, y = 0):
-            self.x = x; self.y = y
-    def draw(self):
-        return (f'point({self.x}, {self.y})')
-    @classmethod
-    def zero(cls):
-        return Point(0, 0)
-    def __str__(self):
-        return f'{self.x}, {self.y}'
+# class Point:
+#     help = "this a pointer"
+#     def __init__(self, x = 0, y = 0):
+#             self.x = x; self.y = y
+#     def draw(self):
+#         return (f'point({self.x}, {self.y})')
+#     @classmethod
+#     def zero(cls):
+#         return Point(0, 0)
+#     def __str__(self):
+#         return f'{self.x}, {self.y}'
     
-    def __eq__(self, other):
-        if self.x == other.x and self.y == other.y:
-            return True
-        else:
-            return False
+#     def __eq__(self, other):
+#         if self.x == other.x and self.y == other.y:
+#             return True
+#         else:
+#             return False
         
-    def __add__(self, other):
-        ret = Point(0, 0)
-        ret.x, ret.y = self.x + other.x, self.y + other.y
+#     def __add__(self, other):
+#         ret = Point(0, 0)
+#         ret.x, ret.y = self.x + other.x, self.y + other.y
 
-        return ret
+#         return ret
 # x = Point()
 # x.draw()
 # print(type(x))
@@ -103,13 +103,13 @@ print("magic metode see in google")
 # ty.__words
 
 
-class product:
-    def __init__(self, price):
-        if price < 0 :
-            raise ValueError("price can not be less than 0")
-        else:
-            self.__price = price
+# class product:
+#     def __init__(self, price):
+#         if price < 0 :
+#             raise ValueError("price can not be less than 0")
+#         else:
+#             self.__price = price
 
 
-product = product(-10)
+# product = product(-10)
 
