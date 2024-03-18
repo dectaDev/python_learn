@@ -55,7 +55,61 @@ print("magic metode see in google")
 # print(cx)
 
 
-cx = Point(1, 3)
-xc = Point(9, 3)
+# cx = Point(1, 3)
+# xc = Point(9, 3)
 
-print(cx + xc)
+# print(cx + xc)
+
+
+# class BagOfWord:
+#     def __init__ (self):
+#         self.__words = {}
+
+#     def add(self, word):
+#         self.__words[word.lower()] = self.__words.get(word.lower(), 0) + 1
+#     def __getitem__(self, word):
+#         return self.__words.get(word.lower(), 0)
+#     def __setitem__(self, word, number):
+#         self.__words[word.lower()] = number
+#     def __len__(self):
+#         return len(self.__words)
+    
+#     def __iter__(self):
+#         return iter(self.__words)
+    
+
+
+
+    
+
+
+
+
+# yt = BagOfWord()
+# # yt.add("amin")
+# # yt.add("Amin")
+# # yt.add("amIn")
+# # amin = yt["amin"]
+
+# # print(yt.words)
+# # print(yt["amin"])
+# yt["amin"] = 90 
+
+# print(yt["amin"])
+# print(len(yt)) 
+# print(yt.__words)
+
+# ty = BagOfWord()
+# ty.__words
+
+
+class product:
+    def __init__(self, price):
+        if price < 0 :
+            raise ValueError("price can not be less than 0")
+        else:
+            self.__price = price
+
+
+product = product(-10)
+
