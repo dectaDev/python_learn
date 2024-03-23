@@ -12,4 +12,10 @@ class Point:
         return self.__x == other.__x and self.__y == other.__y
     def __gt__(self, other):
         return self.__x > other.__x or self.__y > other.__y
+    def __add__(self, other):
+        return Point(self.__x + other.__x, self.__y + other.__y)
     
+
+x = Point(2, 3)
+y = Point(3, 2)
+print(x + y)
