@@ -13,11 +13,3 @@ class Point:
     def __gt__(self, other):
         return self.__x > other.__x or self.__y > other.__y
     
-    
-y = Point(2, 3)
-x = Point(3, 4)
-print(x < y)
-
-x = (2, 3)
-print(x)
-print(type(x))
